@@ -1,69 +1,83 @@
 import Image from "next/image";
-
+import Link from "next/link";
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.js
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className="w-108 md:w-2/3 md:mx-auto ">
+      <section className=" h-[50vh] mt-10 md:mt-20">
+        <div className="flex flex-col items-center justify-center gap-2 md:gap-4">
+          <p className="font-bold text-xl md:text-4xl text-center">
+            The best URl shortner in the Market.
           </p>
+          <p className="md:px-70 px-10 text-center text-sm md:text-xl my-4">
+            We are straightforward and easy to use. No login needed. Just paste
+            your long URL and get a short link in seconds. Our service is free
+            and reliable, making it the perfect choice for anyone looking to
+            share links quickly and easily.
+          </p>
+          <div className="flex gap-4 justify-center items-center font-semibold my-2 text-white">
+            <button className="md:text-xl bg-primary hover:bg-primary-hover px-4 md:px-8 py-2.5 rounded-lg ">
+              <Link href="/shorten">Try Now</Link>
+            </button>
+            <button className="md:text-xl bg-primary hover:bg-primary-hover px-4 md:px-8 py-2.5 rounded-lg ">
+              <Link
+                target="_blank"
+                href="https://github.com/ankitsuthar72747-hash?tab=repositories"
+              >
+                Github
+              </Link>
+            </button>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+        <div className="flex md:flex-row flex-col not-md:mx-auto w-90 not-md:pl-2 md:w-full  gap-6 my-15 not-md:h-220">
+          <div className="w-full  md:w-1/3 h-60 bg-surface shadow-card p-6 md:p-6 rounded-xl">
             <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
+              className="not-md:mx-auto bg-gray-100 rounded-full pr-1"
+              alt="clock"
+              src="/deadline.png"
+              width={60}
+              height={60}
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            <div className="py-4 not-md:text-center">
+              <h2 className="font-bold text-xl md:text-2xl pb-1">Fast Redirects </h2>
+              <p className="font-semibold text-sm md:text-lg">
+                Redirects instantly with reliability
+              </p>
+            </div>
+          </div>
+          <div className="w-full  md:w-1/3 h-60 bg-surface shadow-card p-6 rounded-xl">
+            {/* <div className="bg-gray-100 inline-block rounded-full p-1"> */}
+             <div className="w-14 h-14 bg-gray-100 rounded-full flex items-center justify-center not-md:mx-auto">
+              <Image
+                alt="clock"
+                src="/person.png"
+                width={40}
+                height={40}
+              />
+            </div>
+            <div className="py-4 not-md:text-center">
+              <h2 className="font-bold text-xl md:text-2xl pb-1 ">No Login </h2>
+              <p className="font-semibold text-sm md:text-lg ">No Login Required</p>
+            </div>
+          </div>
+          <div className="w-full  md:w-1/3 h-60 bg-surface shadow-card p-6 rounded-xl">
+            {/* <div className="bg-gray-100 inline-block rounded-full p-1"> */}
+             <div className="w-14 h-14 bg-gray-100 rounded-full flex items-center justify-center not-md:mx-auto">
+              <Image
+                alt="clock"
+                src="/gift.png"
+                width={40}
+                height={40}
+              />
+            </div>
+            <div className="py-4 not-md:text-center">
+              <h2 className="font-bold text-xl md:text-2xl pb-1">Free to Use</h2>
+              <p className="font-semibold text-sm md:text-lg">
+                Always free core features, no hidden costs
+              </p>
+            </div>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+    </main>
   );
 }

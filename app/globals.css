@@ -1,26 +1,57 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* ==================================================
+     1. BACKGROUNDS & SURFACES
+     ================================================== */
+  --color-page:           #F8FAFC;  /* Canvas background */
+  --color-surface:        #FFFFFF;  /* Cards, navbar, modal surfaces */
+  --color-surface-hover:  #F1F5F9;  /* Hover state for list items & neutral buttons */
+  --color-input:          #FFFFFF;  /* Input fields background */
+
+  /* ==================================================
+     2. BRAND & PRIMARY ACCENTS (Royal Blue)
+     ================================================== */
+  --color-primary:        #2563EB;  /* Primary button, brand accents */
+  --color-primary-hover:  #1D4ED8;  /* Primary button hover */
+  --color-primary-active: #1E40AF;  /* Primary button pressed */
+  --color-primary-light:  #EFF6FF;  /* Light blue tint for tags / badges */
+
+  /* ==================================================
+     3. TYPOGRAPHY & TEXT
+     ================================================== */
+  --color-heading:        #0F172A;  /* Titles, headings, brand logo */
+  --color-body:           #334155;  /* Paragraphs and descriptions */
+  --color-muted:          #64748B;  /* Nav links, helper notes */
+  --color-placeholder:    #94A3B8;  /* Input placeholders */
+  --color-inverse:        #FFFFFF;  /* Text on dark/blue buttons */
+
+  /* ==================================================
+     4. BORDERS & DIVIDERS
+     ================================================== */
+  --color-border-light:   #E2E8F0;  /* Card outlines, navbar borders */
+  --color-border-input:   #CBD5E1;  /* Form field borders */
+  --color-border-focus:   #2563EB;  /* Focused input borders */
+
+  /* ==================================================
+     5. STATUS COLORS
+     ================================================== */
+  --color-success:        #16A34A;  /* "Copy Link" button */
+  --color-success-hover:  #15803D;  /* "Copy" button hover */
+  --color-success-bg:     #DCFCE7;  /* Success alert background */
+  --color-error:          #DC2626;  /* Error messages, delete button */
+  --color-error-bg:       #FEE2E2;  /* Error alert background */
+
+  /* ==================================================
+     6. SHADOWS & ELEVATION
+     ================================================== */
+  --shadow-sm:            0 1px 3px 0 rgba(15, 23, 42, 0.05);
+  --shadow-card:          0 4px 20px -2px rgba(15, 23, 42, 0.06);
+  --shadow-navbar:        0 4px 24px -2px rgba(15, 23, 42, 0.07);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Set global body defaults */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-page);
+  color: var(--color-body);
 }

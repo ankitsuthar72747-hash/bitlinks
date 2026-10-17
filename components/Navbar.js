@@ -52,9 +52,7 @@ const Navbar = () => {
           </li>
         </ul>
 
-
         {/*                          on mobile                   */}
-
 
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -106,7 +104,7 @@ const Navbar = () => {
           <Link href="/Contact" onClick={() => setIsOpen(false)}>
             Contact Us
           </Link>
-           <div className="pt-3 border-t border-light flex gap-3 text-inverse text-center text-sm">
+          <div className="pt-3 border-t border-light flex gap-3 text-inverse text-center text-sm">
             <Link
               href="/shorten"
               onClick={() => setIsOpen(false)}
@@ -124,7 +122,6 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
-
       )}
     </nav>
   );

@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function Contact() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16 flex flex-col items-center">
+    <div className="md:max-w-4xl w-108 md:mx-auto py-6 px-3 not-md:pl-6 md:px-6 md:py-16 flex flex-col items-center">
       {/* Header */}
       <div className="text-center max-w-xl mb-12">
         <h1 className="text-3xl md:text-4xl font-extrabold text-heading tracking-tight mb-4">
@@ -63,7 +63,7 @@ export default function Contact() {
       </div>
 
       {/* Quick FAQ / Help Note */}
-      <div className="not-md:mb-10 w-full max-w-2xl bg-surface border border-border-light rounded-2xl p-6 shadow-sm flex items-center justify-between gap-4">
+      <div className="not-md:mb-14 w-full max-w-2xl bg-surface border border-border-light rounded-2xl p-6 shadow-sm flex items-center justify-between gap-4">
         <div>
           <h4 className="font-bold text-heading text-sm">Need to shorten a link right now?</h4>
           <p className="text-muted text-xs mt-0.5">Generate short links instantly with zero sign-up required.</p>

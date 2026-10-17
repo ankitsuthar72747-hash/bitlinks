@@ -6,8 +6,6 @@ export default async function Page({ params }) {
   const db = client.db("bitlinks");
   const collection = db.collection("url");
   const doc = await collection.findOne({ shorturl: shorturl });
-  console.log("Short code:", shorturl);
-console.log("MongoDB document:", doc);
   if (doc) {
     redirect(doc.url);
   } else {

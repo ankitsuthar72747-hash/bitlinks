@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function About() {
   return (
-    <div className="md:max-w-6xl w-108 py-6 px-3  md:mx-auto md:px-6 md:py-12 flex flex-col items-center not-md:pl-6 ">
+    <div className="md:max-w-6xl w-full py-6 px-3  md:mx-auto md:px-6 md:py-12 flex flex-col items-center not-md:pl-2 ">
       {/* Hero Header */}
       <div className="text-center max-w-2xl mb-10">
         <h1 className="text-3xl md:text-4xl font-extrabold text-heading tracking-tight mb-4">

@@ -28,8 +28,8 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="flex md:flex-row flex-col not-md:mx-auto w-90 not-md:pl-2 md:w-full  gap-6 my-15 not-md:h-220">
-          <div className="w-full  md:w-1/3 h-60 bg-surface shadow-card p-6 md:p-6 rounded-xl">
+        <div className="flex md:flex-row flex-col not-md:mx-auto w-full not-md:pl-2 md:w-full  gap-6 my-15 not-md:h-220">
+          <div className="w-[calc(100%-20px)]  md:w-1/3 h-60 bg-surface shadow-card p-6 md:p-6 rounded-xl">
             <Image
               className="not-md:mx-auto bg-gray-100 rounded-full pr-1"
               alt="clock"

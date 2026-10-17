@@ -14,10 +14,10 @@ const Footer = () => {
         <Link href={"/shorten"}>
           <li>URL shorten</li>
         </Link>
-        <Link href={"/about"}>
+        <Link href={"/About"}>
           <li>about</li>
         </Link>
-        <Link href={"/contact"}>
+        <Link href={"/Contact"}>
           <li>conatct</li>
         </Link>
       </ul>

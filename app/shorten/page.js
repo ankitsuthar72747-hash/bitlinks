@@ -37,37 +37,39 @@ const Shorten = () => {
   };
   return (
     <>
-    <div className="border border-light md:mx-auto w-[85%] max-w-108 not-md:ml-8 md:max-w-lg my-20 bg-surface p-10 rounded-xl shadow-card  flex  flex-col gap-6">
-      <h1 className="font-bold text-xl md:text-2xl text-center">{`Generate Your Short URL's`}</h1>
-      <div className="flex flex-col gap-3 w-full">
-        <input
-          type="text"
-          value={url}
-          className=" px-4 py-1.5 focus:outline-border-focus outline-1 outline-border-input bg-input rounded-md"
-          placeholder="Enter your URl"
-          onChange={(e) => seturl(e.target.value)}
-        />
-        <input
-          type="text"
-          value={shorturl}
-          className="px-4 py-1.5 focus:outline-border-focus outline-1 outline-border-input bg-input rounded-md"
-          placeholder="Enter Your Preferred Short URL Text"
-          onChange={(e) => setShorturl(e.target.value)}
-        />
-        <button
-          onClick={generate}
-          className="bg-primary hover:bg-primary-hover  px-2 py-1 rounded-lg font-bold text-white my-3"
-        >
-          Generate
-        </button>
+      <div className="border border-light md:mx-auto w-full max-w-108 not-md:ml-8 md:max-w-lg my-20 bg-surface p-10 rounded-xl shadow-card  flex  flex-col gap-6">
+        <h1 className="font-bold text-xl md:text-2xl text-center">{`Generate Your Short URL's`}</h1>
+        <div className="flex flex-col gap-3 w-full">
+          <input
+            type="text"
+            value={url}
+            className=" px-4 py-1.5 focus:outline-border-focus outline-1 outline-border-input bg-input rounded-md"
+            placeholder="Enter your URl"
+            onChange={(e) => seturl(e.target.value)}
+          />
+          <input
+            type="text"
+            value={shorturl}
+            className="px-4 py-1.5 focus:outline-border-focus outline-1 outline-border-input bg-input rounded-md"
+            placeholder="Enter Your Preferred Short URL Text"
+            onChange={(e) => setShorturl(e.target.value)}
+          />
+          <button
+            onClick={generate}
+            className="bg-primary hover:bg-primary-hover  px-2 py-1 rounded-lg font-bold text-white my-3"
+          >
+            Generate
+          </button>
+        </div>
+        {generated && (
+          <>
+            <span className="font-bold">Your Link</span>
+            <Link target="_blank" href={generated}>
+              {generated}
+            </Link>
+          </>
+        )}
       </div>
-      {generated && (
-        <>
-          <span className="font-bold">Your Link</span>
-          <Link target="_blank" href={generated}>{generated}</Link>
-        </>
-      )}
-    </div>
     </>
   );
 };

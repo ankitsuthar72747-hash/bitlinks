@@ -66,7 +66,7 @@ export default function Contact() {
       </div>
 
       {/* Quick FAQ / Help Note */}
-      <div className="w-full md:max-w-2xl bg-surface border border-border-light rounded-2xl p-6 shadow-sm flex items-center justify-between gap-4">
+      <div className="w-full not-md:mb-10 md:max-w-2xl bg-surface border border-border-light rounded-2xl p-6 shadow-sm flex items-center justify-between gap-4">
         <div>
           <h4 className="font-bold text-heading text-sm">
             Need to shorten a link right now?

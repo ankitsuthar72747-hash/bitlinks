@@ -18,6 +18,11 @@ export const metadata = {
     "bitlinks helps you shorten your long URLs into small and manageable links.",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export default function RootLayout({ children }) {
   return (
     <html

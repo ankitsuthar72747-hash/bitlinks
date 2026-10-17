@@ -5,7 +5,7 @@ import Link from "next/link";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className=" shrink-0 flex flex-col w-108 not-md:ml-1 mx-auto  md:w-2/3 md:gap-10 my-2 md:my-5 shadow-navbar">
+    <nav className="shrink-0 flex flex-col w-full max-w-6xl px-2 mx-auto md:w-2/3 md:gap-10 my-2 md:my-5 shadow-navbar">
       <div className="bg-surface h-16 flex pl-3 md:px-4 items-center rounded-xl border border-light">
         <div className="text-heading text-xl md:text-3xl font-bold">
           BitLinks
@@ -56,7 +56,7 @@ const Navbar = () => {
 
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden pl-78 p-2 text-heading hover:text-primary-hover focus:outline-none"
+          className="md:hidden ml-auto shrink-0 p-2 text-heading hover:text-primary-hover focus:outline-none"
           aria-label="Toggle Menu"
         >
           {isOpen ? (

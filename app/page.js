@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Home() {
   return (
-    <main className="w-108 md:w-2/3 md:mx-auto ">
+    <main className="w-full md:w-2/3 md:mx-auto ">
       <section className=" h-[50vh] mt-10 md:mt-20">
         <div className="flex flex-col items-center justify-center gap-2 md:gap-4">
           <p className="font-bold text-xl md:text-4xl text-center">
